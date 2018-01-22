@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Charles Wyman Programming</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+
+    <ion-card style="float:right; max-width:20%">
+        <ion-card-content>
+            <p style="font-style: italic">Welcome, Visitor!</p>
+            <p>{{time | date:'medium'}}</p>
+            <p>{{city}}</p>
+        </ion-card-content>
+    </ion-card>
+    
+    <ion-card (click)="openPage(blogPage)">
+        <ion-card-header>
+        <img src='assets/imgs/techno-brain.jpg' />
+        <h2>Welcome</h2>            
+        </ion-card-header>
+        <ion-card-content>
+        <p padding>
+            This is my portfolio web page. I am a software developer that specializes in creating web applications. What web developer doesn't have a portfolio site, right? The site is designed to be responsive from the ground up and to provide the user access to an in-depth version of my resume, examples of my art, links to different apps and sites that I have made, and provide a contact form for contacting me. The site itself should showcase engaging features and design. Also, a blog has been included to show how easy it is to write one from scratch today without even needing to resort to WordPress.
+        </p>
+        <p padding>
+            The cards below provide links to different pages. There is a blog page for containing my thoughts about different things. There is an art page which has thumbnails of different designs that I have done through the years, which can be clicked to be expanded and zoomed in on. The 'About' page contains a copy of my resume, and the 'Contact' page provides a contact form for sending me e-mails.
+        </p>
+        <p>
+            Enjoy!
+        </p>
+        </ion-card-content>
+    </ion-card>
+    <ion-card (click)="openPage('BlogPage')">
+        <ion-card-header>
+            <img src='assets/imgs/techno-brain.jpg' />
+            <h2>
+                Blog
+            </h2>
+        </ion-card-header>
+        <ion-card-content>
+            <p padding>
+                I have written a blog to track my progress in creating this site and to have a place to speak about different topics in the IT industry as I see fit. Click here to check it out! 
+            </p>            
+        </ion-card-content>
+
+    </ion-card>
+    <ion-card (click)="openPage('ArtPage')">
+        <ion-card-header>
+            <img src='assets/imgs/techno-brain.jpg' />
+            <h2>
+                Gallery
+            </h2>
+        </ion-card-header>
+        <ion-card-content>
+            <p padding>
+                This page contains an art gallery featuring different graphic design put together by the author. Image are displayed as thumbnails and can be clicked on to present a full image with zooming features.
+            </p>            
+        </ion-card-content>        
+    </ion-card>
+    <ion-card (click)="openPage('AboutPage')">
+        <ion-card-header>
+            <img src='assets/imgs/techno-brain.jpg' />
+            <h2>
+                About
+            </h2>
+        </ion-card-header>
+        <ion-card-content>
+            <p padding>
+                This page contains more information about the author. Click here to review the author's resume as well as a general summary of work experience.
+            </p>            
+        </ion-card-content>
+    </ion-card>
+    <ion-card (click)="openPage('ContactPage')">
+        <ion-card-header>
+            <img src='assets/imgs/techno-brain.jpg' />
+            <h2>
+                Contact
+            </h2>
+        </ion-card-header>
+        <ion-card-content>
+            <p padding>
+                This page provides a contact form for sending an e-mail to the author. Please fill out the fields to generate an e-mail so that the author can promptly reply to your e-mail.
+            </p>            
+        </ion-card-content>
+    </ion-card>
+</ion-content>

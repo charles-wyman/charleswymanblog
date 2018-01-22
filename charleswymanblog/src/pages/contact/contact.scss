@@ -1,0 +1,25 @@
+page-contact {
+    ion-label {
+        color: #00FFFF !important;
+        white-space: normal;
+        word-break: no-break;
+    }
+    
+    button {
+        min-height: 40px;
+        border-radius: 6px;
+    }
+    
+    ion-item {
+        background-color: transparent !important;
+    }
+    
+    input {
+        color: white;
+    }
+    
+    textarea {
+        color:white;
+    }
+    
+}

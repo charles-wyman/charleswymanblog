@@ -1,0 +1,40 @@
+<!--
+  Generated template for the BlogPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Blog</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-card class='blog-entry' *ngFor="let entry of entries; let i = index;">
+        <ion-card-header (click)="toggleGroup(i)">
+            
+            <div class='blog-title'>
+                <img src='assets/imgs/techno-brain.jpg' />
+                <h2>{{entry.title}}
+                <ion-icon color="#00FFFF" item-right [name]="isGroupShown(i) ? 'arrow-dropdown-circle' : 'arrow-dropright-circle'"></ion-icon>
+                </h2>
+            </div>
+        </ion-card-header>
+        <ion-card-content *ngIf="isGroupShown(i)">                  
+            <div class='blog-author'>Author: {{entry.author}}</div>
+            <div class='blog-date'>Posted at <br/>
+                               {{entry.time}} on <br /> 
+                               {{entry.date}}</div>
+            <p padding *ngFor="let paragraph of entry.content;">{{paragraph}}</p>
+        </ion-card-content>
+    </ion-card>
+    
+    
+
+</ion-content>
