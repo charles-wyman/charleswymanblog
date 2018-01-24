@@ -18,12 +18,18 @@
 $color-green: #32cd32;
 $color-cyan: #00FFFF;
 //$color-cyan: #505B94;
+
+@font-face {
+    font-family: Planet_Kosmos_Regular;
+    src: local(bttf_font), url('../assets/fonts/Planet_Kosmos_Regular.ttf') format('opentype');
+}
+
 .toolbar-background-md {
     background-color: $color-cyan;     
 }
 
 .toolbar-title-md {
-    font-family: Planet Kosmos; 
+    font-family: Planet_Kosmos_Regular; 
     text-align:center; 
 
     //color:#86D8;
