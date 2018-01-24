@@ -20,8 +20,10 @@ $color-cyan: #00FFFF;
 //$color-cyan: #505B94;
 
 @font-face {
-    font-family: Planet_Kosmos_Regular;
-    src: local(bttf_font), url('../assets/fonts/Planet_Kosmos_Regular.ttf') format('opentype');
+    font-family: 'Planet_Kosmos_Regular';
+    src: url('../assets/fonts/Planet_Kosmos_Regular.ttf') format('truetype'),
+        url('../asset/fonts/Planet_Kosmos_Regular.woff') format('woff'),
+        url('../asset/fonts/Planet_Kosmos_Regular.woff2') format('woff2');
 }
 
 .toolbar-background-md {
@@ -29,7 +31,7 @@ $color-cyan: #00FFFF;
 }
 
 .toolbar-title-md {
-    font-family: Planet_Kosmos_Regular; 
+    font-family: 'Planet_Kosmos_Regular'; 
     text-align:center; 
 
     //color:#86D8;
