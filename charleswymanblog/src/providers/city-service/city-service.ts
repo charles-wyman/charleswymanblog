@@ -26,6 +26,7 @@ export class CityServiceProvider {
         var iter = 0;
         var selector = 0;
       
+        
         do {
             if (data.results[iter].types[0] === 'locality' && data.results[iter].types[1] === 'political') {
                 foundMatch = true;

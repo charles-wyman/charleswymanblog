@@ -30,37 +30,13 @@ $color-cyan: #00FFFF;
     background-color: $color-cyan;     
 }
 
-@media screen and (min-device-width : 0px)
-{
-    .toolbar-title-md
-    {
-        font-size: 1em !important;
-    }
-}
-
-@media screen and (min-device-width : 401px)
-{
-  .toolbar-title-md 
-  {
-    font-size: 2em !important;
-  }
-}
-/*
-@media screen and (max-device-width : 1204px)
-{
-  .toolbar-title-md  
-  {
-    font-size: 2em !important;
-  }
-}
-*/
 .toolbar-title-md {
     font-family: 'Planet_Kosmos_Regular'; 
     text-align:center; 
 
     //color:#86D8;
     color: $color-green;
-    //font-size: 2em;
+    font-size: 3vw;
 }
 
 .toolbar .toolbar-md {
