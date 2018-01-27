@@ -21,11 +21,10 @@ $color-cyan: #00FFFF;
 
 @font-face {
     font-family: 'Planet_Kosmos_Regular';
-    src: url('../assets/fonts/Planet_Kosmos_Regular.ttf') format('truetype'),
-        url('../asset/fonts/Planet_Kosmos_Regular.woff') format('woff'),
-        url('../asset/fonts/Planet_Kosmos_Regular.woff2') format('woff2');
+    src: url('../assets/fonts/Planet_Kosmos_Regular.TTF') format('truetype'),
+        url('../asset/fonts/planet_kosmos_regular-webfont.woff') format('woff'),
+        url('../asset/fonts/planet_kosmos_regular-webfont.woff2') format('woff2');
 }
-
 .toolbar-background-md {
     background-color: $color-cyan;     
 }
